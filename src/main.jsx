@@ -1,10 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// starts the app
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+
+// takes over the "root" div in index.html and renders the app inside it
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App /> {/* show whatever App.jsx returns */}
+  </React.StrictMode>
+);
